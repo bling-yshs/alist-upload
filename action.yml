@@ -1,5 +1,8 @@
 name: 'Alist Upload'
 description: 'Upload file to Alist'
+branding:
+  icon: upload-cloud
+  color: white
 inputs:
   alist-url:
     description: 'Alist server uRL'
