@@ -1,17 +1,25 @@
 {
   "compilerOptions": {
+    // 这三个代表使用现代的 es 模块
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "bundler",
+    // 严格 typescript 模式
     "strict": true,
+    // 根目录
+    "rootDir": "src",
+    // 输出目录
     "outDir": "dist",
+    // 启用 esModule 互操作性
     "esModuleInterop": true,
+    // 跳过库检查
     "skipLibCheck": true,
+    // 强制一致的文件名大小写
     "forceConsistentCasingInFileNames": true,
+    // 解析 json 模块
     "resolveJsonModule": true,
-    "declaration": true,
-    "rootDir": "src"
+    // 生成 d.ts 声明文件
+    "declaration": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
 }
