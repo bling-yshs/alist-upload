@@ -1,0 +1,27 @@
+name: 'Alist Upload'
+description: 'Upload file to Alist'
+inputs:
+  alist-url:
+    description: 'Alist server uRL'
+    required: true
+  alist-username:
+    description: 'Alist username'
+    required: true
+  alist-password:
+    description: 'Alist password'
+    required: true
+  file-path:
+    description: 'File path using glob'
+    required: true
+  remote-dir:
+    description: 'Remote directory'
+    required: true
+  overwrite-exist-file:
+    description: 'Overwrite exist file on remote server'
+    required: false
+outputs:
+  time:
+    description: 'current time'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
